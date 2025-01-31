@@ -5,15 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정책자금 계산기</title>
     <style>
-        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f9; }
-        .calculator { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); max-width: 400px; width: 100%; }
-        .calculator h2 { margin-bottom: 20px; font-size: 24px; text-align: center; }
-        .calculator label { display: block; margin-bottom: 8px; font-weight: bold; }
+        body { 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background-color: #f4f4f9; 
+            margin: 0;
+            flex-direction: column;
+        }
+        .calculator { 
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+            max-width: 400px; 
+            width: 100%; 
+            text-align: center;
+        }
+        .calculator h2 { margin-bottom: 20px; font-size: 24px; }
+        .calculator label { display: block; margin-bottom: 8px; font-weight: bold; text-align: left; }
         .calculator input, .calculator select { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; }
         .calculator button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 8px; cursor: pointer; }
         .calculator button:hover { background-color: #0056b3; }
-        .result { margin-top: 20px; font-size: 18px; text-align: center; }
-        .inquiry-form { display: none; margin-top: 20px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .result { margin-top: 20px; font-size: 18px; text-align: center; font-weight: bold; }
+        .inquiry-form { display: none; margin-top: 20px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 400px; width: 100%; text-align: center; }
     </style>
 </head>
 <body>
