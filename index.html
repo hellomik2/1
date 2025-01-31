@@ -59,12 +59,6 @@
         
         <div class="inquiry-form" id="inquiryForm">
             <h3>자금 문의하기</h3>
-            <label for="businessNumber">사업자번호:</label>
-            <input type="text" id="businessNumber" placeholder="사업자번호 입력">
-            
-            <label for="companyName">회사명:</label>
-            <input type="text" id="companyName" placeholder="회사명 입력">
-            
             <button onclick="sendInquiry()">문의하기</button>
         </div>
     </div>
@@ -104,13 +98,7 @@
         }
 
         function sendInquiry() {
-            const businessNumber = document.getElementById('businessNumber').value;
-            const companyName = document.getElementById('companyName').value;
-            const email = "worua19@naver.com";
-            const subject = encodeURIComponent("정책자금 문의");
-            const body = encodeURIComponent(`사업자번호: ${businessNumber}\n회사명: ${companyName}\n정책자금 계산 결과: ${document.getElementById('result').innerText}`);
-            
-            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+            window.open("https://docs.google.com/forms/d/e/1FAIpQLSdl7PD8UOevNx2MoIqYO_P8nJaA2Xf38pZ8inu4ew62pXRRfQ/viewform?usp=sharing", "_blank");
         }
     </script>
 </body>
